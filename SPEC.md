@@ -53,3 +53,11 @@ Source: Todo-Dashboard Inbox, verbatim (typos kept), plus chat the same day.
 
 Context screenshot (order screen, contains customer data, so NOT stored in this public repo): `~/Documents/Todo-Dashboard/archive/recordings-2026-10-02/` (Pasted image 20261002091802.png).
 
+## 2026-10-02 (later in the session)
+
+> rename de repo
+
+> ik zie alleen dat het huisadres van de verzending nog niet geklikt kan worden
+
+(Jelle koos daarna "both": straatregel als klikdoel en shipping-Huisnummer.)
+
