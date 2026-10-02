@@ -27,3 +27,5 @@ Doel: voorraadoverzicht uitbreiden tot `szm-woo-suite` met (1) klik-om-te-kopier
 
 Verificatie rename (2026-10-02, lokaal getest, zie DECISIONS.md): daadwerkelijke GitHub-update is nog niet getest (vereist push). Header/constante-mismatch (1.0.13 vs 1.0.14) opgelost in 1.0.15: beide headers en `SZM_WOO_SUITE_VERSION` = 1.0.15. Stub en hoofdbestand moeten bij elke release dezelfde versie krijgen.
 
+
+**Sessie 1 status (2026-10-02): gebouwd en lokaal getest, nog niet gecommit/gepusht/uitgebracht (versie 1.0.17 in werkboom; 1.0.17 voegt straatregel toe en een tolerante Huisnummer-zoeker voor factuur en verzending).** `inc/order-click-to-copy.php` + `assets/order-click-to-copy.js`. Lokaal getest op MMT-kopie (HPOS) en fse-test (klassiek, post.php): naam, postcode, huisnummer, e-mail kopieren en selecteren, e-mail opent geen mailto, geen JS-fouten, bewerkmodus en slepen-om-te-selecteren worden niet gekaapt, schermafdruk voor/na op 1440 en 390 px pixel-identiek. Nog te doen door Jelle: proberen op echte lokale bestellingen (zie DECISIONS.md voor wat niet geverifieerd is), daarna release op zijn akkoord.

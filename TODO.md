@@ -16,6 +16,6 @@ jou wacht.
 - SPEC.md: voorstel om je woorden toe te voegen: "i want one checkboxs that changes both instead of multiple checkboxes… they have to be synced anyway" en "in de orginele versie werden die samengevoegd en in een keer bewerkt de nederlandse en engelse versie want die hebben namelijk de zelfde voorraa". Zeg ja en ik zet ze erin.
 
 ## Wacht op jou (2026-10-02, rename naar szm-woo-suite)
-- Release v1.0.15 is gedaan (2026-10-02, https://github.com/Yelbow/szm-voorraadoverzicht/releases/tag/v1.0.15): rename naar SZM Woo Suite plus de 1.0.12-1.0.14 wijzigingen. Wacht op jou: update op live (modernmenthongs.nl) via wp-admin > Plugins (eventueel eerst Dashboard > Updates > "Opnieuw controleren") en laat weten dat de pluginrij 1.0.15 toont en Voorraadoverzicht nog werkt. Daarna volgt stap 5: GitHub-repo hernoemen naar `szm-woo-suite` en `SZM_WOO_SUITE_REPO_URL` aanpassen (backup + undo: `~/Documents/szm-woo-suite-rename-backup-2026-10-02/README.md`).
+- Live is geüpdatet naar 1.0.15 (2026-10-02, door Jelle gemeld). GitHub-repo hernoemd naar `Yelbow/szm-woo-suite` (oude URL redirect), `origin` en admin-suite-verwijzing bijgewerkt. De constante `SZM_WOO_SUITE_REPO_URL` staat lokaal ongecommit op de nieuwe URL en gaat mee met de volgende release. Open: nog niets voor jou, behalve een live-check of de NB-checkbox nu blijft staan (zie hierboven, 1.0.14-punt).
 - Orderscherm-features (PLAN.md "Woo-suite uitbreiding"): welke statussen wil je precies? Staan "ingepakt & klaar voor verzending" en "aangemeld bij pakketdienst" vast, of komen er meer?
 

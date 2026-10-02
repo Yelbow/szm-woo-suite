@@ -44,6 +44,10 @@ for the selected period.
   reload. Cells that merge multiple variations stay read-only always,
   since it isn't unambiguous which variation is meant.
 
+## Order screen: click to copy
+
+On the WooCommerce order edit screen (HPOS and classic), clicking the billing or shipping name, the street line (street + house number), the postcode, the "Huisnummer" value (tolerant of different markup) or the e-mail address selects that text and copies it to the clipboard (a small "Gekopieerd: ..." toast confirms). The e-mail link does not open a mail client. Nothing happens while the address is in edit mode or when you drag-select text. No layout change. Code: `inc/order-click-to-copy.php`, `assets/order-click-to-copy.js`.
+
 ## Install on a site
 
 The repo root *is* the plugin: both plugin files and `inc/` live at the
