@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       SZM Woo Suite
  * Description:       Voorraadoverzicht in wp-admin: rij = product + kleur, kolom = maat, cel = voorraad / verkocht over een gekozen periode. Periode-toggle, CSV-export en een inline bewerken-modus voor eenduidig editbare cellen (precies 1 onderliggende variatie).
- * Version:           1.0.15
+ * Version:           1.0.17
  * Requires at least: 5.9
  * Requires PHP:      7.4
  * Requires Plugins:  woocommerce
@@ -45,7 +45,7 @@ if ( ! defined( 'SZM_WOO_SUITE_PLUGIN_FILE' ) ) {
 // Release: bump this AND the "Version:" header in BOTH szm-woo-suite.php and
 // szm-voorraadoverzicht.php (the updater reads the header of whichever file
 // is active on a site, see README "Updates").
-define( 'SZM_WOO_SUITE_VERSION', '1.0.15' );
+define( 'SZM_WOO_SUITE_VERSION', '1.0.17' );
 define( 'SZM_VOORRAAD_VERSION', SZM_WOO_SUITE_VERSION ); // pre-rename name, kept for compat.
 
 /*
@@ -53,7 +53,7 @@ define( 'SZM_VOORRAAD_VERSION', SZM_WOO_SUITE_VERSION ); // pre-rename name, kep
  * After `gh repo rename szm-woo-suite`, change ONLY this line to
  * 'https://github.com/Yelbow/szm-woo-suite'.
  */
-define( 'SZM_WOO_SUITE_REPO_URL', 'https://github.com/Yelbow/szm-voorraadoverzicht' );
+define( 'SZM_WOO_SUITE_REPO_URL', 'https://github.com/Yelbow/szm-woo-suite' );
 
 /*
  * Plugin Update Checker slug: an internal key (stored state option
@@ -141,3 +141,4 @@ add_action( 'admin_notices', function () {
 
 // Modules.
 require_once __DIR__ . '/inc/voorraadoverzicht.php';
+require_once __DIR__ . '/inc/order-click-to-copy.php';

@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       SZM Voorraadoverzicht (compat loader)
  * Description:       Laadt SZM Woo Suite. Laat dit actief op sites waar de plugin nog onder de oude naam (szm-voorraadoverzicht/szm-voorraadoverzicht.php) geactiveerd is; nieuwe installs activeren "SZM Woo Suite".
- * Version:           1.0.15
+ * Version:           1.0.17
  * Requires at least: 5.9
  * Requires PHP:      7.4
  * Requires Plugins:  woocommerce
