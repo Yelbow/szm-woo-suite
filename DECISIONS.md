@@ -76,3 +76,9 @@
 - **Afgehandelde vormen (getest):** `<p><strong>L:</strong> 35</p>`, met `<br>`, met `<br><span>`, label-`<p>` + waarde-`<p>`, `<div><label>` + `<div><span>`, `<div><div><strong>` + `<div>` (oom), `&nbsp;` + witruimte, waarde in `<a>`, `<b>HUISNUMMER</b>` zonder dubbele punt, platte tekst "Huisnummer: 35", `<dl><dt><dd>`, lege waarde gevolgd door ander label (niets gewrapt), label in bewerkformulier (overgeslagen).
 - **Niet afgehandeld:** waarde verspreid over meerdere tekstknopen of elementen (alleen de eerste wordt gewrapt); waarde in een element zonder tekst (bv. alleen `value=` in een input of via CSS `content`); label in een ander dan het Nederlandse woord "Huisnummer".
 - **Test:** orderscherm nu zonder wc-admin te blokkeren (declutter-notice-onderdrukking staat lokaal uit, scherm rendert gewoon). Testplugin `zz-test-huisnummer.php` zet in factuur `<div><div><strong>`+`&nbsp;`+`<span>` en in verzending `<p><strong>L:</strong><br><span>35 35</span></p>`. Let op in eigen tests: `document.readyState` kan na `networkidle` nog `loading` zijn, wacht erop voor je het script injecteert.
+
+## Grilling 2026-10-10: openstaande beslissingen
+- 2026-10-10 (Jelle): Q11 "weg". XXL uit `SZM_MAAT_VOLGORDE` (inc/voorraadoverzicht.php:71).
+- 2026-10-10 (Jelle): Q12 "correct". Orderstatussen: alleen "ingepakt & klaar voor verzending" en "aangemeld bij pakketdienst".
+- Aanname, geen vraag: de SPEC-quotes over de checkbox staan al in SPEC.md (regel 20 en 24). SPEC ongewijzigd.
+- Open: declutter-module op WooCommerce-bestelpagina's, wacht op live-check MMT.

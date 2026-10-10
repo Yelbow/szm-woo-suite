@@ -29,3 +29,6 @@ Verificatie rename (2026-10-02, lokaal getest, zie DECISIONS.md): daadwerkelijke
 
 
 **Sessie 1 status (2026-10-02): gebouwd en lokaal getest, nog niet gecommit/gepusht/uitgebracht (versie 1.0.17 in werkboom; 1.0.17 voegt straatregel toe en een tolerante Huisnummer-zoeker voor factuur en verzending).** `inc/order-click-to-copy.php` + `assets/order-click-to-copy.js`. Lokaal getest op MMT-kopie (HPOS) en fse-test (klassiek, post.php): naam, postcode, huisnummer, e-mail kopieren en selecteren, e-mail opent geen mailto, geen JS-fouten, bewerkmodus en slepen-om-te-selecteren worden niet gekaapt, schermafdruk voor/na op 1440 en 390 px pixel-identiek. Nog te doen door Jelle: proberen op echte lokale bestellingen (zie DECISIONS.md voor wat niet geverifieerd is), daarna release op zijn akkoord.
+
+## Besluit 2026-10-10 (grilling)
+- XXL uit `SZM_MAAT_VOLGORDE` halen (inc/voorraadoverzicht.php:71). Verifiëren op de lokale voorraadpagina: maatkolommen kloppen zonder XXL.
