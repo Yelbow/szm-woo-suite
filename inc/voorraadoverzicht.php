@@ -171,6 +171,29 @@ function szm_render_voorraadoverzicht() {
         .szm-voorraad-input { width: 50px; padding: 2px 4px; font-size: 13px; text-align: center; }
         .szm-flash-ok { background: #d7f5d7 !important; transition: background 0.3s; }
         .szm-flash-fout { background: #f7d7d7 !important; transition: background 0.3s; }
+        .szm-tabel-wrap { -webkit-overflow-scrolling: touch; }
+
+        /* Mobiel: de twee sticky kolommen (350px) namen het hele scherm in. Smaller, productnaam mag wrappen. */
+        @media (max-width: 782px) {
+            .szm-tabel { font-size: 12px; }
+            .szm-tabel th, .szm-tabel td { padding: 6px 8px; }
+            .szm-tabel th:nth-child(n+3), .szm-tabel td:nth-child(n+3) { padding: 6px 8px; min-width: 56px; }
+            .szm-tabel th:first-child, .szm-tabel td:first-child {
+                width: 96px; min-width: 96px; max-width: 96px;
+                white-space: normal; overflow-wrap: anywhere; line-height: 1.25;
+            }
+            .szm-tabel th:nth-child(2), .szm-tabel td:nth-child(2) {
+                left: 96px; width: 62px; min-width: 62px; max-width: 62px;
+                white-space: normal; overflow-wrap: anywhere; line-height: 1.25;
+            }
+            .szm-product img { display: none; }
+            .szm-nabestel-toggle { font-size: 12px; padding: 4px 0; }
+            .szm-nabestel-toggle input { width: 20px; height: 20px; }
+            .szm-voorraad-input { width: 56px; padding: 6px 4px; font-size: 16px; }
+            .szm-toolbar { flex-direction: column; align-items: stretch; }
+            .szm-periode-toggle, .szm-toolbar-rechts { flex-wrap: wrap; }
+            .szm-periode-toggle a, .szm-export-btn { padding: 10px 14px; }
+        }
     </style>
     <?php
 
